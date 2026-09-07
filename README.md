@@ -13,4 +13,4 @@ Da det er første gang I arbejder med webteknologier, og vi ikke bygger nogen ba
 til at gemme data undervejs.
 
 
-[læs hele case beskrivelsen her](case/CASE.pdf)
+[læs hele case beskrivelsen her](case-resources/CASE.pdf)
