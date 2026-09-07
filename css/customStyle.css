@@ -23,24 +23,6 @@ header h1 {
   gap:2em;
 }
 
-@media (max-width: 700px) {
-  .options {
-    grid-template-columns: 1fr 1fr;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5em;
-  }
-}
-@media (max-width: 480px) {
-  .options {
-    grid-template-columns: 1fr;
-  }
-}
-
 .logo {
   width: 300px; /* or max-width for responsiveness */
   height: auto; /* preserve aspect ratio */
@@ -55,8 +37,6 @@ header h1 {
   justify-content: center;
 }
 
-
-
 .carousel-viewport{
   display:flex;
   overflow-x: auto;
@@ -64,7 +44,10 @@ header h1 {
   scroll-snap-type:x mandatory;
 
 }
-
+#progress-status{
+  font-size: 10px;
+  font-style: italic;
+}
 
 .question {
   margin: 1em 0;
@@ -145,5 +128,34 @@ button, .button {
 
 }
 
-
-
+@media (max-width: 700px) {
+  body{
+    font-size:16px;
+  }
+  .options {
+    grid-template-columns: 1fr 1fr;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+  }
+}
+@media (max-width: 480px) {
+  body{
+    font-size:14px;
+  }
+  .options {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+  body{
+    font-size:14px;
+  }
+  .logo { width: 150px; }
+  .question-text {
+    padding: 0.5em; }
+}
