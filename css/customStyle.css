@@ -8,7 +8,7 @@ body{
   font-family: Calibri, sans-serif;
   background-color: var(--daylight);
   color:var(--businessBlue);
-  font-size:10px;
+  font-size:18px;
 }
 
 header {
@@ -30,6 +30,7 @@ header h1 {
 .options{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap:2em;
 }
 
 @media (max-width: 700px) {
@@ -69,6 +70,7 @@ header h1 {
 .carousel-viewport{
   display:flex;
   overflow-x: auto;
+  gap:1em;
   scroll-snap-type:x mandatory;
 
 }
@@ -82,39 +84,75 @@ header h1 {
 }
 
 .question-text {
+  padding: 2em;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
 
-
 .option {
   padding: 0.5em;
-  border: 1px solid #ccc;
+
+  border: 2px solid var(--poolsideStudy);
+   color:var(--pencilGrey);
+   border-radius: 15px;
+
+   text-align: center;
+
 
 }
-.option:has( input:hover){
-  background-color: var(--poolsideStudyLight);
+
+
+.option:hover{
+  background-color: var(--poolsideStudy);
+  color:var(--pencilGrey);
+
+
+
 }
+
 .option:has(input:checked){
   background-color: var(--poolsideStudy);
+  color:var(--daylight);
 }
+
+/*
+skjuler radiobutton grafikken
+*/
 .options input[type=radio]{
    opacity: 0;
 }
-form:has(:invalid) button[type="submit"]{
+
+/*
+Sørger for at submit knappen er inaktiv indtil formularen er korrekt udfyldt.
+*/
+button[type="submit"]{
   opacity: 0.5;
+  display: block;
+  width: 100%;
   pointer-events: none;
+
 }
+form:valid button[type="submit"]{
+  opacity: 1;
+  pointer-events:auto;
+}
+
+/*
+Vi har to slags knapper som med få undtagelser deler styling.
+*/
 button, .button {
-  background-color: var(--campusGreen);
+  background-color: var(--notebook);
   color:var(--daylight);
-  display: inline-block;
-  text-decoration: none;
-  border: none;
-  border-radius: 999px;
+  border-radius: 10px;
   padding: 0.75em 2em;
   font-size: 1.2em;
   cursor: pointer;
+  /*start knappen på forsiden: et link som er stylet som en knap*/
+  text-decoration: none;/*fjerner understreget text som er default for links*/
+  /*submit knappen: et button element som er knyttet til form elementet*/
+  text-align: center;
+  border: none;/*fjerner knap slagskygge som er default for knapper */
+
 }
 
 
