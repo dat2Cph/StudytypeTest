@@ -103,7 +103,7 @@ header h1 {
 
 
 .option:hover{
-  background-color: var(--poolsideStudy);
+  background-color: var(--poolsideStudyLight);
   color:var(--pencilGrey);
 
 
