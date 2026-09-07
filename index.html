@@ -4,11 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personlighedstest</title>
+    <title>Study type test</title>
 
+    <link rel="stylesheet" href="css/toggle.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/customStyle.css">
     <link rel="stylesheet" href="css/colors.css">
+
+
 
     <meta property="og:title" content="Study type test">
     <meta property="og:type" content="website">
@@ -21,42 +24,52 @@
     <link rel="apple-touch-icon" href="icon.png">
 
 
-    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
 <header>
     <img src="img/RGB_EK_logo_Academic%20fire.svg" alt="Logo" class="logo">
-
     <h1>Hvordan studerer du?</h1>
 </header>
 
 <div class="page">
     <p id="introduction">Der findes ikke én rigtig måde at studere på — men der findes forskellige tilgange, og de fleste af os genkender
         sig selv i mere end én.
-        Denne test tager udgangspunkt i forskning om, hvordan studerende griber deres studier an: nogle går efter at
-        forstå stoffet i dybden, andre fokuserer strategisk på det, der tæller til eksamen, og nogle læser primært for
-        at kunne huske det nødvendige. Ingen af tilgangene er forkerte — de fungerer forskelligt afhængigt af
-        situationen, og de fleste af os bruger faktisk alle tre, alt efter hvad vi står overfor.
+
         Du får 12 hverdagssituationer fra studielivet. Vælg det svar, der ligner dig mest — der er ingen rigtige eller
         forkerte svar, kun ærlige.
-    <details>
 
-        <summary>mere...
-        </summary>
+    </p>
+    <div id="ananymous">Svar anonymt:
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <a href="questions.html" class="button">Start</a>
+
+    <details>
+        <summary>mere...</summary>
+        Denne test tager udgangspunkt i forskning om, hvordan studerende griber deres studier an: Nogle går efter at forstå stoffet i dybden, andre fokuserer strategisk på det, der tæller til eksamen, og nogle læser primært for
+        at kunne huske det nødvendige. Ingen af tilgangene er forkerte — de fungerer forskelligt afhængigt af
+        situationen, og de fleste af os bruger faktisk alle tre, alt efter hvad vi står overfor.
 
         Undersøgelsesdesignet er baseret på Entwistle NJ forskning "The approaches and study skills inventory for
         students (ASSIST)". Edinburgh:
         Centre for Research on Learning and Instruction, University of Edinburgh, 1997.
     </details>
-
-    </p>
-    <a href="questions.html" class="button">Start</a>
-
 </div>
 
-<script></script>
+<script type="application/javascript">
+    const toggle = document.querySelector('.switch input');
+    toggle.addEventListener('change', toggleAnonymous);
+    function toggleAnonymous(){
+            localStorage.setItem('anonymous', toggle.checked);
+            console.log(localStorage.getItem('anonymous'));
+    }
+</script>
 
 </body>
 
