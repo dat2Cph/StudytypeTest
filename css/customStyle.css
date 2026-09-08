@@ -33,8 +33,15 @@ header h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap:1em;
 }
+.textbox{
 
+  background-color:var(--sunlitEnergy);
+  border-radius: 12px;
+  padding: 20px;
+
+}
 .carousel-viewport{
   display:flex;
   overflow-x: auto;
@@ -42,9 +49,11 @@ header h1 {
   scroll-snap-type:x mandatory;
 
 }
-#progress-status{
+#form-header{
+  display:flex;
   font-size: 10px;
   font-style: italic;
+  justify-content:space-between;
 }
 
 .question {
