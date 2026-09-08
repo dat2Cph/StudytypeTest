@@ -19,8 +19,8 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
 
@@ -37,9 +37,10 @@
 <div class="page">
 
   <form action = "result.html">
-
-    <div id="progress-status">12/12</div>
-
+     <div id="form-header">
+      <div id="anonymous-status">anonymous status goes here...</div>
+      <div id="progress-status">12/12</div>
+     </div>
 
     <div class="questions carousel-viewport">
       <fieldset class="question">
@@ -157,7 +158,30 @@
   </form>
 </div>
 
+<script>
 
+
+  const anonymousChoice =  localStorage.getItem("anonymous");
+  const statusElement = document.querySelector("#anonymous-status");
+
+  statusElement.textContent = anonymousChoice === "true"?"Du besvarer anonymt":"Du besvarer ikke anonymt";
+
+
+  const questionElms = document.querySelectorAll(".question");
+  const progressElm = document.querySelector("#progress-status");
+
+  //løb igennem alle elementer og tilføj en eventListener, der lytter på click. Lad den kalde updateProgress
+
+  function updateProgress(){
+    let selectedNum = 0;
+    //løb alle elementer igennem og tæl hvor mange af dem der er blevet valgt
+    progressElm.textContent = selectedNum +"/"+questionElms.length;
+
+  }
+
+  updateProgress();
+
+</script>
 
 
 
