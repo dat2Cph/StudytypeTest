@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Study type test</title>
 
-    <link rel="stylesheet" href="css/toggle.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/customStyle.css">
     <link rel="stylesheet" href="css/colors.css">
 
-
+    <link rel="stylesheet" href="css/toggle.css">
 
     <meta property="og:title" content="Study type test">
     <meta property="og:type" content="website">
@@ -19,8 +18,8 @@
     <meta property="og:image" content="">
     <meta property="og:image:alt" content="">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon.png">
 
 
@@ -34,14 +33,14 @@
 </header>
 
 <div class="page">
-    <p id="introduction">Der findes ikke én rigtig måde at studere på — men der findes forskellige tilgange, og de fleste af os genkender
+    <p id="introduction" class="textbox">Der findes ikke én rigtig måde at studere på — men der findes forskellige tilgange, og de fleste af os genkender
         sig selv i mere end én.
 
         Du får 12 hverdagssituationer fra studielivet. Vælg det svar, der ligner dig mest — der er ingen rigtige eller
         forkerte svar, kun ærlige.
 
     </p>
-    <div id="ananymous">Svar anonymt:
+    <div id="anonymous">Svar anonymt:
         <label class="switch">
             <input type="checkbox">
             <span class="slider"></span>
@@ -62,7 +61,34 @@
     </details>
 </div>
 
+<script type="application/javascript">
+    const anonymousChoice = document.querySelector("input");
+    anonymousChoice.addEventListener("change", setChoice);
 
+    function setChoice(){
+
+
+
+       localStorage.setItem("anonymous",this.checked);
+
+       console.log(localStorage.getItem("anonymous"));
+
+   }
+
+    const logo = document.querySelector('.logo')
+    const backgroundElement = document.querySelector("body");
+   logo.addEventListener("click", changeColor);
+
+
+   function changeColor(){
+         logo.src="img/RGB_EK_logo_Poolside study.svg";
+         backgroundElement.style="background-color:var(--pencilGrey);color:var(--daylight)";
+   }
+
+
+
+
+</script>
 
 </body>
 
