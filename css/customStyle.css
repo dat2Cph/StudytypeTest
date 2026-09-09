@@ -112,6 +112,7 @@ button[type="submit"]{
   pointer-events: none;
 
 }
+
 form:valid button[type="submit"]{
   opacity: 1;
   pointer-events:auto;
@@ -132,8 +133,24 @@ button, .button {
   /*submit knappen: et button element som er knyttet til form elementet*/
   text-align: center;
   border: none;/*fjerner knap slagskygge som er default for knapper */
-
 }
+
+#Dyb{
+  background-color: var(--teamSpirit);
+  height: 30px;
+}
+
+#Overfladisk{
+  background-color: var(--studyBuddy);
+  height: 30px;
+}
+
+#Strategisk{
+  background-color: var(--mindfulBreak);
+  height: 30px;
+}
+
+
 
 @media (max-width: 700px) {
   body{
