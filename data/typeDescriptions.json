@@ -1,15 +1,15 @@
 [
   {
-    "navn": "Dyb",
+    "name": "Dyb",
     "text": "Du vil forstå tingene til bunds, ikke bare kunne dem udenad. Du stiller spørgsmål til det, du læser, og du forbinder ny viden med det, du allerede kan. Det betyder, at det, du lærer, sidder fast længe efter eksamen — og at du får et solidt fundament, du kan bygge videre på resten af din karriere."
 
   },
   {
-    "navn": "Strategisk",
+    "name": "Strategisk",
     "text": "Du har styr på, hvad der skal til, og du bruger din tid dér, hvor den gør størst forskel. Du planlægger, prioriterer og holder øje med, hvad der efterspørges. Det gør dig effektiv — og giver dig overskud til det, der virkelig betyder noget for dig."
   },
   {
-    "navn": "Overfladisk",
+    "name": "Overfladisk",
     "text": "Lige nu handler det for dig mest om at komme igennem pensum og få tingene fra hånden. Det er en helt naturlig tilgang i en travl periode — men når du sætter tid af til at gå mere i dybden med stoffet, får du langt mere med dig videre. Prøv at vælge ét emne ad gangen, hvor du dykker lidt dybere ned — det er ofte nok til at rykke noget."
   }
 ]

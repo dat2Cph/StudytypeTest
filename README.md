@@ -14,3 +14,14 @@ til at gemme data undervejs.
 
 
 [læs hele case beskrivelsen her](case-resources/CASE.pdf)
+
+## Kør lokalt
+
+Siden er ren HTML/CSS/JS uden build-step, men skal serveres over HTTP (ikke åbnes direkte som `file://`), fordi `result.js` henter `data/typeDescriptions.json` med `fetch`.
+
+```bash
+npm install
+npm start
+```
+
+Dette starter en lokal server og åbner siden i browseren.
