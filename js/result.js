@@ -29,3 +29,17 @@ const el3 = document.querySelector("#Strategisk");
 el1.style.width = countDyb*100+"px";
 el2.style.width = countOverfladisk*100+"px";
 el3.style.width = countStrategisk*100+"px";
+
+
+
+
+
+
+async function loadTypeDescriptions(){
+    const res = await fetch("data/typeDescriptions.json");
+    const data = await res.json();
+    console.log(data);
+
+}
+
+loadTypeDescriptions();

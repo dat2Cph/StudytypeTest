@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "question": "Du sidder med en øvelsesopgave, du ikke umiddelbart forstår.",
+    "options": [
+      {
+        "text": "Jeg læser opgaven igen og prøver at finde ud af, hvad den egentlig går ud på, før jeg går videre",
+        "type": "Dyb"
+      },
+      {
+        "text": "Jeg googler et lignende eksempel og tilpasser løsningen, så jeg kan komme videre",
+        "type": "Overfladisk"
+      },
+      {
+        "text": "Jeg tjekker, hvor mange point opgaven giver, og vurderer om det er værd at bruge tid på lige nu",
+        "type": "Strategisk"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Du har læst et kapitel til undervisningen. Hvad sidder du tilbage med?",
+    "options": [
+      {
+        "text": "En liste over de vigtigste pointer, jeg kan huske til eksamen",
+        "type": "Overfladisk"
+      },
+      {
+        "text": "Nogle spørgsmål, jeg gerne vil have svar på i timen",
+        "type": "Dyb"
+      },
+      {
+        "text": "Et overblik over, hvad der sandsynligvis bliver eksamensrelevant",
+        "type": "Strategisk"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Det er aften før deadline, og du er bagud med en opgave.",
+    "options": [
+      {
+        "text": "Jeg prioriterer det, der tæller mest i bedømmelsen, og skærer resten væk",
+        "type": "Strategisk"
+      },
+      {
+        "text": "Jeg arbejder mig igennem det hele i den rækkefølge, det står i opgaven",
+        "type": "Overfladisk"
+      },
+      {
+        "text": "Jeg bliver ved med det svære punkt, for jeg vil faktisk forstå det, før jeg går videre",
+        "type": "Dyb"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Underviseren stiller et spørgsmål, du ikke kender svaret på.",
+    "options": [
+      {
+        "text": "Jeg gætter ud fra, hvad jeg tror lyder rigtigt",
+        "type": "Overfladisk"
+      },
+      {
+        "text": "Jeg siger, jeg ikke ved det, men foreslår hvordan man kunne finde ud af det",
+        "type": "Dyb"
+      },
+      {
+        "text": "Jeg venter og ser, om nogen andre svarer først",
+        "type": "Strategisk"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Du har fået en opgave tilbage med kommentarer fra underviseren.",
+    "options": [
+      {
+        "text": "Jeg kigger på karakteren og går videre til næste opgave",
+        "type": "Overfladisk"
+      },
+      {
+        "text": "Jeg læser kommentarerne grundigt for at forstå, hvad der kunne være bedre",
+        "type": "Dyb"
+      },
+      {
+        "text": "Jeg noterer mig, hvad der gav point, så jeg kan bruge det næste gang",
+        "type": "Strategisk"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Du skal vælge, hvilke sider fra pensum du bruger tid på op til en aflevering.",
+    "options": [
+      {
+        "text": "Jeg læser det hele grundigt fra start til slut",
+        "type": "Overfladisk"
+      },
+      {
+        "text": "Jeg fokuserer på det, der virker mest eksamens- eller opgaverelevant",
+        "type": "Strategisk"
+      },
+      {
+        "text": "Jeg dykker ned i de dele, jeg synes er mest interessante eller uklare",
+        "type": "Dyb"
+      }
+    ]
+  }]
